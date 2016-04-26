@@ -1,3 +1,5 @@
+require 'date'
+
 def return_10
   return 10
 end
@@ -48,4 +50,20 @@ def number_to_short_month_name(num)
   elsif num == 9
     return "Sep"
   end
+end
+
+def volume(height, width, depth)
+  return height * width * depth
+end
+
+def sphere_volume(radius)
+  return  4.082 * (radius ** 3)
+end 
+
+def days_until(year, month, day)
+  return Date.new(2016,12,25) - Date.new(year, month, day)
+end
+
+def days_since(year, month, day)
+  return Date.new(2016, 04, 26) - Date.new(year, month, day)
 end
